@@ -10,3 +10,4 @@ export const profile: Profile = {
     "This portfolio introduces who I am, how I work, what I have shipped, and what I am building next. Every section is editable through typed content so the site can evolve with my work.",
   resumeUrl: "#contact"
 };
+

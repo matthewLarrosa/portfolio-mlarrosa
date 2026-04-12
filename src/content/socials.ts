@@ -17,3 +17,4 @@ export const socials: SocialLink[] = [
     icon: "email"
   }
 ];
+

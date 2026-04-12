@@ -14,5 +14,18 @@ export const projects: ProjectItem[] = [
       repo: "https://github.com/matthewLarrosa/portfilio-mlarrosa"
     },
     featured: true
+  },
+  {
+    slug: "developer-tooling-lab",
+    name: "Developer Tooling Lab",
+    status: "completed",
+    summary:
+      "A workspace for experimenting with scripts, automation, and workflow improvements that make delivery smoother.",
+    description:
+      "A practical sandbox for exploring tooling ideas that strengthen build pipelines, local workflows, and project setup quality.",
+    tech: ["Node.js", "TypeScript", "GitHub Actions"],
+    links: {},
+    featured: true
   }
 ];
+

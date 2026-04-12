@@ -55,3 +55,4 @@ export type Profile = {
   longBio?: string;
   resumeUrl?: string;
 };
+
