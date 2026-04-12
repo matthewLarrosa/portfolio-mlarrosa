@@ -1,34 +1,68 @@
-import type { ExperienceItem } from "@/types/content";
+﻿import type { ExperienceItem } from "@/types/content";
 
 export const experience: ExperienceItem[] = [
   {
-    company: "Independent Projects",
-    role: "Software Engineer",
-    start: "2024",
+    company: "American Express",
+    role: "Software Engineer I",
+    employmentType: "Full-time",
+    start: "Jan 2025",
     end: "Present",
-    location: "United States",
+    location: "Sunrise, Florida, United States · On-site",
     summary:
-      "Building and refining full-stack and systems-oriented projects with an emphasis on maintainability, product clarity, and strong developer experience.",
+      "Working as a full-time software engineer on production systems at American Express, building on the frontend and backend foundations established during prior internships.",
     bullets: [
-      "Designed and shipped personal and collaborative applications with practical scope and maintainable architecture.",
-      "Improved project quality through iterative delivery, cleaner abstractions, and a sharper eye for interaction details.",
-      "Used each project as a way to deepen fundamentals across frontend, backend, and tooling workflows."
+      "Contribute to production engineering work in a high-accountability enterprise environment.",
+      "Build software with a focus on reliability, maintainability, and clean collaboration across teams.",
+      "Apply the same product-minded frontend and systems thinking developed through earlier internships and academic programs."
     ],
-    tech: ["React", "TypeScript", "C#", "SQL"]
+    tech: ["React", ".NET", "Java", "APIs"]
   },
   {
-    company: "Portfolio Rebrand",
-    role: "Product-minded Engineer",
-    start: "2026",
-    end: "Present",
+    company: "American Express",
+    role: "Software Engineer Intern",
+    employmentType: "Internship",
+    start: "Jun 2024",
+    end: "Aug 2024",
+    location: "Sunrise, Florida, United States · On-site",
     summary:
-      "Reframing my online presence around thoughtful execution, polished presentation, and the work I intend to deliver this year.",
+      "Migrated a legacy rule-building platform from .NET to a React-based architecture while contributing across UI and backend integration layers.",
     bullets: [
-      "Defined a typed content model so the portfolio stays easy to update as my experience and projects change.",
-      "Balanced a minimal editorial layout with a restrained sci-fi visual treatment inspired by the Death Star surface.",
-      "Optimized the implementation for static delivery, maintainability, and a clean deployment workflow on Vercel."
+      "Migrated a legacy rule-building platform from .NET to a React-based architecture.",
+      "Designed and enhanced user interfaces from the legacy .NET application using React and CoreUI components.",
+      "Worked on backend systems, developing JDBC connections for database integration and creating API endpoints to support frontend data exchange."
     ],
-    tech: ["Next.js", "Tailwind CSS", "Vercel"]
+    tech: ["React", "CoreUI", "JDBC", "APIs", ".NET"]
+  },
+  {
+    company: "Google",
+    role: "Google Tech Exchange",
+    employmentType: "Apprenticeship",
+    start: "Jan 2024",
+    end: "May 2024",
+    location: "United States · Remote",
+    summary:
+      "Completed a semester-long academic program for students from select HBCUs and HSIs in North America, focused on technical growth and career readiness.",
+    bullets: [
+      "Received comprehensive technical interview training and one-to-one mentoring from Googlers.",
+      "Engaged in advanced data structures and project management courses for academic credit.",
+      "Strengthened problem-solving discipline, communication, and professional readiness in a cohort-based environment."
+    ],
+    tech: ["Python", "Figma", "Data Structures", "Project Management"]
+  },
+  {
+    company: "American Express",
+    role: "Software Engineer Sprintern",
+    employmentType: "Internship",
+    start: "May 2023",
+    end: "May 2023",
+    location: "Sunrise, Florida, United States · On-site",
+    summary:
+      "Built a React module to streamline project tracking for Amex scrum teams with a clearer workflow for updates and monitoring.",
+    bullets: [
+      "Developed a React module aimed at streamlining project tracking for Amex scrum teams.",
+      "Designed a structured table with add, edit, and timestamp functionality for project details.",
+      "Improved the user experience with a clearer interface for monitoring project status and updates in real time."
+    ],
+    tech: ["React", "Docker", "Agile"]
   }
 ];
-

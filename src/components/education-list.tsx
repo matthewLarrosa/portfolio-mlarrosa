@@ -1,21 +1,18 @@
-﻿import type { ExperienceItem } from "@/types/content";
+﻿import type { EducationItem } from "@/types/content";
 
-type ExperienceListProps = {
-  items: ExperienceItem[];
+type EducationListProps = {
+  items: EducationItem[];
 };
 
-export function ExperienceList({ items }: ExperienceListProps) {
+export function EducationList({ items }: EducationListProps) {
   return (
     <div className="grid gap-5">
       {items.map((item) => (
-        <article key={`${item.company}-${item.role}-${item.start}`} className="rounded-[1.6rem] border border-border bg-white/70 p-6 shadow-sm">
+        <article key={`${item.school}-${item.degree}`} className="rounded-[1.6rem] border border-border bg-white/70 p-6 shadow-sm">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <h3 className="text-xl font-semibold tracking-[-0.03em] text-foreground">{item.role}</h3>
-              <p className="mt-1 text-sm uppercase tracking-[0.2em] text-muted">
-                {item.company}
-                {item.employmentType ? ` | ${item.employmentType}` : ""}
-              </p>
+              <h3 className="text-xl font-semibold tracking-[-0.03em] text-foreground">{item.degree}</h3>
+              <p className="mt-1 text-sm uppercase tracking-[0.2em] text-muted">{item.school}</p>
             </div>
             <p className="text-sm text-muted">
               {item.start} - {item.end}

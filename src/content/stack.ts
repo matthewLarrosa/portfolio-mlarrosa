@@ -1,13 +1,12 @@
-import type { StackItem } from "@/types/content";
+﻿import type { StackItem } from "@/types/content";
 
 export const stack: StackItem[] = [
-  { name: "Next.js" },
   { name: "React" },
+  { name: "Next.js" },
   { name: "TypeScript" },
-  { name: "Tailwind CSS" },
-  { name: "Node.js" },
-  { name: "C#" },
+  { name: "Java" },
+  { name: ".NET" },
+  { name: "Python" },
   { name: "SQL" },
-  { name: "GitHub Actions" }
+  { name: "Docker" }
 ];
-

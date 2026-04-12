@@ -1,10 +1,14 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --color-background: #f4f1ec;
   --color-foreground: #13151a;
   --color-muted: #5f636f;
   --color-border: rgba(19, 21, 26, 0.1);
   --color-accent: #5d6d7e;
-  --color-panel: rgba(255, 255, 255, 0.76);
+  --color-panel: rgba(255, 255, 255, 0.72);
   --color-panel-strong: rgba(255, 255, 255, 0.92);
 }
 
@@ -75,17 +79,18 @@ a {
 .death-star-surface::before {
   content: "";
   position: absolute;
-  top: 3rem;
-  left: min(6vw, 3rem);
-  width: min(28rem, 78vw);
+  top: 1.5rem;
+  left: min(4vw, 1.5rem);
+  width: min(30rem, 82vw);
   aspect-ratio: 1;
-  border-radius: 999px;
   background:
-    radial-gradient(circle at 38% 38%, rgba(255, 255, 255, 0.56), transparent 28%),
-    radial-gradient(circle at center, rgba(98, 116, 135, 0.14), transparent 64%);
-  border: 1px solid rgba(19, 21, 26, 0.08);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.26);
-  opacity: 0.86;
+    radial-gradient(circle at center, rgba(244, 241, 236, 0.18), rgba(244, 241, 236, 0) 62%),
+    url("/death-star.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: grayscale(1) contrast(0.9) opacity(0.14);
+  mix-blend-mode: multiply;
 }
 
 .death-star-surface::after {
@@ -96,8 +101,8 @@ a {
     linear-gradient(rgba(19, 21, 26, 0.04) 1px, transparent 1px),
     linear-gradient(90deg, rgba(19, 21, 26, 0.04) 1px, transparent 1px);
   background-size: 36px 36px;
-  opacity: 0.08;
-  mask-image: radial-gradient(circle at 16% 10%, black 0%, transparent 60%);
+  opacity: 0.06;
+  mask-image: radial-gradient(circle at 16% 10%, black 0%, transparent 54%);
 }
 
 .project-preview {
@@ -134,4 +139,3 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
-

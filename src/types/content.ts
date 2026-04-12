@@ -1,4 +1,4 @@
-export type SocialIcon = "github" | "linkedin" | "email" | "x" | "website";
+﻿export type SocialIcon = "github" | "linkedin" | "email" | "x" | "website";
 
 export type SocialLink = {
   label: string;
@@ -9,8 +9,20 @@ export type SocialLink = {
 export type ExperienceItem = {
   company: string;
   role: string;
+  employmentType?: string;
   start: string;
   end: string | "Present";
+  location?: string;
+  summary: string;
+  bullets: string[];
+  tech?: string[];
+};
+
+export type EducationItem = {
+  school: string;
+  degree: string;
+  start: string;
+  end: string;
   location?: string;
   summary: string;
   bullets: string[];
@@ -55,4 +67,3 @@ export type Profile = {
   longBio?: string;
   resumeUrl?: string;
 };
-

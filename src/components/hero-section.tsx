@@ -1,3 +1,4 @@
+﻿import Image from "next/image";
 import { Icon } from "@/components/icon";
 import { profile } from "@/content/profile";
 import { socials } from "@/content/socials";
@@ -8,15 +9,24 @@ export function HeroSection() {
       <div className="relative z-10 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
         <div>
           <span className="eyebrow">Software Engineer</span>
-          <div className="mt-6 flex items-start gap-4 sm:gap-5">
-            <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-[1.4rem] border border-border bg-[#ded9d1] text-3xl font-semibold tracking-[-0.08em] text-foreground shadow-sm">
-              ML
+          <div className="mt-6 flex items-start gap-5 sm:gap-6">
+            <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-[1.6rem] border border-border bg-[#ded9d1] shadow-sm sm:h-28 sm:w-28">
+              <Image
+                src="/matthew-headshot-hero.jpg"
+                alt="Matthew Larrosa"
+                fill
+                className="object-cover object-center"
+                sizes="(min-width: 640px) 112px, 96px"
+                priority
+              />
             </div>
-            <div>
-              <h1 className="font-display text-4xl tracking-[-0.05em] text-foreground sm:text-5xl">
+            <div className="pt-1 sm:pt-2">
+              <h1 className="text-4xl font-semibold tracking-[0.02em] text-foreground sm:text-5xl">
                 {profile.name}
               </h1>
-              <p className="mt-2 text-xl text-foreground/90">{profile.title}</p>
+              <p className="mt-2 text-lg tracking-[-0.03em] text-foreground/90 sm:text-xl">
+                {profile.title}
+              </p>
               <p className="mt-1 text-sm text-muted">{profile.location}</p>
             </div>
           </div>
@@ -26,7 +36,7 @@ export function HeroSection() {
           <p className="mt-5 max-w-3xl text-base leading-8 text-muted">{profile.longBio}</p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              className="inline-flex items-center rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"
+              className="inline-flex items-center rounded-full bg-foreground px-5 py-3 font-mono text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"
               href={profile.resumeUrl}
             >
               Resume & Contact
@@ -63,4 +73,3 @@ export function HeroSection() {
     </section>
   );
 }
-

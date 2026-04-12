@@ -1,4 +1,6 @@
+﻿import Image from "next/image";
 import { BackgroundTreatment } from "@/components/background-treatment";
+import { EducationList } from "@/components/education-list";
 import { ExperienceList } from "@/components/experience-list";
 import { HeroSection } from "@/components/hero-section";
 import { PlannedProjectsList } from "@/components/planned-projects-list";
@@ -7,6 +9,7 @@ import { ResumeButton } from "@/components/resume-button";
 import { SectionHeading } from "@/components/section-heading";
 import { SocialLinks } from "@/components/social-links";
 import { TechStackGrid } from "@/components/tech-stack-grid";
+import { education } from "@/content/education";
 import { experience } from "@/content/experience";
 import { plannedProjects } from "@/content/planned-projects";
 import { profile } from "@/content/profile";
@@ -33,10 +36,10 @@ export function SiteShell() {
           </div>
           <div className="section-shell p-6 sm:p-8">
             <p className="section-copy">
-              I care about software that earns trust through clarity. That means dependable foundations, strong naming, interfaces that stay out of the way, and product choices that respect the user&apos;s time.
+              I&apos;m a software engineer based in Miami, Florida, currently working at American Express. I care about software that earns trust through clarity: dependable foundations, clean interfaces, and implementation details that make systems easier to evolve.
             </p>
             <p className="section-copy mt-4">
-              This portfolio keeps that same posture: a compact layout, restrained styling, and enough personality to feel specific without overpowering the work itself.
+              My background spans product-facing frontend work, backend integrations, academic technical programs, and fast-paced team environments. This portfolio keeps that same posture: compact, intentional, and focused on the work.
             </p>
           </div>
         </section>
@@ -44,11 +47,35 @@ export function SiteShell() {
         <section id="experience" className="section-shell p-6 sm:p-8 lg:p-10">
           <SectionHeading
             eyebrow="Experience"
-            title="How I approach engineering work"
-            description="A snapshot of the roles, habits, and technical focus areas that shape how I build and ship software."
+            title="Recent roles and engineering context"
+            description="A timeline of the work that shaped how I build, collaborate, and think about product and platform quality."
           />
           <div className="mt-8">
             <ExperienceList items={experience} />
+          </div>
+        </section>
+
+        <section id="education" className="section-shell p-6 sm:p-8 lg:p-10">
+          <div className="grid gap-6 lg:grid-cols-[1fr_14rem] lg:items-start">
+            <SectionHeading
+              eyebrow="Education"
+              title="Computer science foundation and community"
+              description="The academic and extracurricular context behind my growth as an engineer, teammate, and competitor."
+            />
+            <aside className="flex justify-start lg:justify-end">
+              <div className="relative h-24 w-24 grayscale sm:h-28 sm:w-28 lg:h-32 lg:w-32">
+                <Image
+                  src="/fiu-seal.png"
+                  alt="Florida International University seal"
+                  fill
+                  className="object-contain opacity-60"
+                  sizes="(min-width: 1024px) 128px, (min-width: 640px) 112px, 96px"
+                />
+              </div>
+            </aside>
+          </div>
+          <div className="mt-8">
+            <EducationList items={education} />
           </div>
         </section>
 
@@ -78,7 +105,7 @@ export function SiteShell() {
           <SectionHeading
             eyebrow="Tech Stack"
             title="Tools I reach for regularly"
-            description="The stack here is intentionally broad enough to reflect the way I work today while staying easy to update as the portfolio evolves."
+            description="A snapshot of the tools and technologies that reflect both my day-to-day work and the environments I have trained in recently."
           />
           <div className="mt-8">
             <TechStackGrid items={stack} />
@@ -116,4 +143,3 @@ export function SiteShell() {
     </main>
   );
 }
-
