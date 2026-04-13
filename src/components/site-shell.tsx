@@ -1,4 +1,6 @@
-﻿import Image from "next/image";
+﻿'use client';
+
+import Image from "next/image";
 import { BackgroundTreatment } from "@/components/background-treatment";
 import { EducationList } from "@/components/education-list";
 import { ExperienceList } from "@/components/experience-list";
@@ -16,6 +18,8 @@ import { socials } from "@/content/socials";
 import { stack } from "@/content/stack";
 
 export function SiteShell() {
+  const isProduction = process.env.NODE_ENV === "production";
+  const fiuSealUrl = isProduction ? "/portfolio-mlarrosa/fiu-seal.png" : "/fiu-seal.png";
   const featuredProjects = projects.filter((project) => project.featured);
 
   return (
@@ -45,7 +49,7 @@ export function SiteShell() {
             <aside className="flex justify-start lg:justify-end">
               <div className="relative h-24 w-24 grayscale sm:h-28 sm:w-28 lg:h-32 lg:w-32">
                 <Image
-                  src="/fiu-seal.png"
+                  src={fiuSealUrl}
                   alt="Florida International University seal"
                   fill
                   className="object-contain opacity-60"

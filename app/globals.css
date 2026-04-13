@@ -83,9 +83,7 @@ a {
   left: min(4vw, 1.5rem);
   width: min(30rem, 82vw);
   aspect-ratio: 1;
-  background:
-    radial-gradient(circle at center, rgba(244, 241, 236, 0.18), rgba(244, 241, 236, 0) 62%),
-    url("/death-star.avif");
+  background: var(--death-star-bg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

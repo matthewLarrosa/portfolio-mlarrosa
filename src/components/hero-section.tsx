@@ -1,9 +1,14 @@
-﻿import Image from "next/image";
+﻿'use client';
+
+import Image from "next/image";
 import { Icon } from "@/components/icon";
 import { profile } from "@/content/profile";
 import { socials } from "@/content/socials";
 
 export function HeroSection() {
+  const isProduction = process.env.NODE_ENV === "production";
+  const headshotUrl = isProduction ? "/portfolio-mlarrosa/matthew-headshot-hero.jpg" : "/matthew-headshot-hero.jpg";
+
   return (
     <section className="relative section-shell overflow-hidden px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
       <div className="relative z-10 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
@@ -12,7 +17,7 @@ export function HeroSection() {
           <div className="mt-6 flex items-start gap-5 sm:gap-6">
             <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-[1.6rem] border border-border bg-[#ded9d1] shadow-sm sm:h-28 sm:w-28">
               <Image
-                src="/matthew-headshot-hero.jpg"
+                src={headshotUrl}
                 alt="Matthew Larrosa"
                 fill
                 className="object-cover object-center"

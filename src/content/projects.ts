@@ -11,7 +11,7 @@ export const projects: ProjectItem[] = [
       "Built as a statically generated Next.js experience with typed content, responsive sections, and a subtle cinematic background treatment.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
     links: {
-      repo: "https://github.com/matthewLarrosa/portfilio-mlarrosa"
+      repo: "https://github.com/matthewLarrosa/portfolio-mlarrosa"
     },
     featured: true
   },
