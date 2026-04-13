@@ -8,12 +8,12 @@ export const socials: SocialLink[] = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com",
+    href: "https://www.linkedin.com/in/matthew-larrosa-19-9999ml/",
     icon: "linkedin"
   },
   {
     label: "Email",
-    href: "mailto:hello@matthewlarrosa.dev",
+    href: "mailto:matthewterra16@gmail.com",
     icon: "email"
   }
 ];

@@ -1,9 +1,7 @@
-﻿const navItems = [
-  { label: "About", href: "#about" },
+const navItems = [
   { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
   { label: "Projects", href: "#projects" },
-  { label: "Roadmap", href: "#roadmap" },
   { label: "Contact", href: "#contact" }
 ];
 
