@@ -14,7 +14,7 @@ This portfolio is designed to be clean, maintainable, and focused. All content i
 - **Language**: TypeScript
 - **UI**: React 19
 - **Styling**: Tailwind CSS
-- **Hosting**: Vercel
+- **Hosting**: GitHub Pages
 
 ## Design Approach
 
