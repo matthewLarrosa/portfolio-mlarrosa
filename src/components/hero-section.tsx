@@ -59,13 +59,13 @@ export function HeroSection() {
           <div className="rounded-[1.5rem] border border-border bg-[var(--color-panel-strong)] p-5">
             <p className="eyebrow">Current focus</p>
             <p className="mt-4 text-lg font-medium leading-8 text-foreground">
-              Building polished, maintainable products that feel simple to use and straightforward to evolve.
+              Balancing production systems at work with side projects that push my skills forward. Always shipping, always experimenting.
             </p>
           </div>
           <div className="rounded-[1.5rem] border border-border bg-[var(--color-panel-strong)] p-5">
             <p className="eyebrow">This year</p>
             <p className="mt-4 text-lg font-medium leading-8 text-foreground">
-              Shipping a stronger public body of work across systems, tooling, and product-minded interfaces.
+              Mobile development + AI integration: shipping mobile-first experiences powered by intelligent tooling and smart architecture.
             </p>
           </div>
         </div>

@@ -5,8 +5,8 @@ export const profile: Profile = {
   title: "Software Engineer",
   location: "Miami, Florida",
   shortBio:
-    "I build reliable software with a product mindset, focusing on developer-friendly systems, clean interfaces, and practical delivery.",
+    "Full-stack engineer building scalable systems. Hands-on with modern AI tools and infrastructure that matters.",
   longBio:
-    "This portfolio introduces who I am, how I work, what I have shipped, and what I am building next. Every section is editable through typed content so the site can evolve with my work.",
+    "Hello, I'm Matt. I'm a software engineer working at American Express. This is my portfolio site where I share projects I've built. Feel free to explore my projects and reach out if you'd like to connect!",
   resumeUrl: "#contact"
 };
